@@ -1,5 +1,7 @@
 import './App.css';
-import PricingCard from "./components/Card/PricingCard";
+import SectionWrapper from './components/atoms/SectionWrapper';
+import DisplayFeature from './components/Card/FeatureCard/DisplayFeature';
+import FeatureLists from './components/Card/FeatureCard/FeatureLists';
 
 // const appJsx = (
 //     <div className="App">
@@ -20,24 +22,28 @@ import PricingCard from "./components/Card/PricingCard";
 //     </div>
 // )
 
-const free = [
-  [true, 'Email Marketing Module'],
-  [true, 'User Control Management'],
-  [false, 'List Building And Cleaning'],
-  [false, 'Collected Data Reports'],
-  [false, 'Planning And Evaluation'],
-]
+// const free = [
+//   [true, 'Email Marketing Module'],
+//   [true, 'User Control Management'],
+//   [false, 'List Building And Cleaning'],
+//   [false, 'Collected Data Reports'],
+//   [false, 'Planning And Evaluation'],
+// ]
 
-const heading = {
-  title: 'Basic',
-  price: 'Free',
-  frequency: 'lifetime'
-}
+// const heading = {
+//   title: 'Basic',
+//   price: 'Free',
+//   frequency: 'lifetime'
+// }
 
 function App() {
   return (
-    <PricingCard heading={heading} features={free} />
-  );
+    <SectionWrapper id="features" classes="tabs">
+      <FeatureLists>
+        {(activeFeature) => <DisplayFeature feature={activeFeature} />}
+      </FeatureLists>
+    </SectionWrapper>
+  )
 }
 
 export default App;
