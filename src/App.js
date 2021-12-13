@@ -1,7 +1,6 @@
 import './App.css';
-import SectionWrapper from './components/atoms/SectionWrapper';
-import DisplayFeature from './components/Card/FeatureCard/DisplayFeature';
-import FeatureLists from './components/Card/FeatureCard/FeatureLists';
+import DescriptionSection from './components/DescriptionSection/DescriptionSection';
+import FeatureSection from './components/FeatureSection/FeatureSection';
 
 // const appJsx = (
 //     <div className="App">
@@ -38,11 +37,10 @@ import FeatureLists from './components/Card/FeatureCard/FeatureLists';
 
 function App() {
   return (
-    <SectionWrapper id="features" classes="tabs">
-      <FeatureLists>
-        {(activeFeature) => <DisplayFeature feature={activeFeature} />}
-      </FeatureLists>
-    </SectionWrapper>
+    <>
+      <DescriptionSection />
+      <FeatureSection />
+    </>
   )
 }
 
