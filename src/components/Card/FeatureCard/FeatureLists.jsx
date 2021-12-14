@@ -1,3 +1,4 @@
+/* eslint-disable no-script-url */
 import { useState } from "react";
 import Wrapper from "../../atoms/Wrapper";
 import FeatureList from "./FeatureList";
@@ -17,7 +18,7 @@ export default function FeatureLists({ children }) {
                     activeName={activeFeature}
                     id="listBuilder"
                     icon="fa-list"
-                    link="#listBuilder"
+                    link="javascript:void(0)"
                     text="List Builder"
                     handler={handleFeature}
                 />
@@ -25,7 +26,7 @@ export default function FeatureLists({ children }) {
                     activeName={activeFeature}
                     id="campaigns"
                     icon="fa-envelope-open-text"
-                    link="#campaigns"
+                    link="javascript:void(0)"
                     text="Campaigns"
                     handler={handleFeature}
                 />
@@ -33,7 +34,7 @@ export default function FeatureLists({ children }) {
                     activeName={activeFeature}
                     id="analytics"
                     icon="fa-chart-bar"
-                    link="#analytics"
+                    link="javascript:void(0)"
                     text="Analytics"
                     handler={handleFeature}
                 />
