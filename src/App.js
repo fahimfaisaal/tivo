@@ -3,6 +3,7 @@ import DescriptionSection from './components/DescriptionSection/DescriptionSecti
 import FeatureSection from './components/FeatureSection/FeatureSection';
 import FeatureSubSection from './components/FeatureSubSection/FeatureSubSection';
 import PricingSection from './components/PricingSection/PricingSection';
+import VideoSection from './components/VideoSection/VideoSection';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <DescriptionSection />
       <FeatureSection />
       <FeatureSubSection />
+      <VideoSection />
       <PricingSection />
     </>
   )
