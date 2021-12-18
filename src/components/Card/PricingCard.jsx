@@ -1,5 +1,4 @@
 import Button from '../atoms/Button';
-import Divider from '../atoms/Divider';
 import CardFeatures from './CardFeatures';
 import CardHeading from './CardHeading';
 
@@ -12,8 +11,11 @@ export default function PricingCard({ heading, features }) {
                     price={heading.price}
                     frequency={heading.frequency}
                 />
-                <Divider />
+
+                <div class="divider"></div>
+
                 <CardFeatures cardFeatures={features} />
+                
                 <div className="button-wrapper">
                     <Button text="SIGN UP"/>
                 </div>
