@@ -12,7 +12,7 @@ export default function PricingCard({ heading, features }) {
                     frequency={heading.frequency}
                 />
 
-                <div class="divider"></div>
+                <div class="divider" />
 
                 <CardFeatures cardFeatures={features} />
                 

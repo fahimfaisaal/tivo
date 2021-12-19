@@ -7,7 +7,7 @@ export default function FeatureList({ handler, activeName, text, icon, link, id 
                 href={link}
                 onClick={handler}
             >
-                <i style={{pointerEvents: 'none'}} className={`fas ${icon}`}></i>
+                <i style={{pointerEvents: 'none'}} className={`fas ${icon}`} />
                 {text}
             </a>
         </li>
